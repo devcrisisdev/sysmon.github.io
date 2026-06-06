@@ -1197,6 +1197,42 @@ footer {
 </div>
 
 <!-- Nav -->
+<!-- Announcement Bar -->
+<div id="announce-bar" style="
+  background: linear-gradient(90deg, #8a3fff, #b57aff, #8a3fff);
+  background-size: 200% 100%;
+  animation: shimmer 3s ease infinite;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 901;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+">
+  <span style="display:inline-flex;align-items:center;gap:6px">
+    <span style="width:7px;height:7px;border-radius:50%;background:#fff;box-shadow:0 0 8px #fff;animation:pulse 1.5s infinite;display:inline-block"></span>
+    SysMon V3.0.0 — Coming Soon
+  </span>
+  <span style="opacity:0.5">·</span>
+  <span style="opacity:0.8;font-size:10px;letter-spacing:1px">Stay tuned for major updates</span>
+  <button onclick="document.getElementById('announce-bar').style.display='none'" style="position:absolute;right:16px;background:none;border:none;color:rgba(255,255,255,0.6);cursor:pointer;font-size:14px;line-height:1;padding:0">✕</button>
+</div>
+
+<style>
+@keyframes shimmer {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+</style>
+
 <nav>
   <a class="nav-brand" href="#">
     <div class="nav-dot"></div>
